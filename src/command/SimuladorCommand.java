@@ -12,7 +12,7 @@ public class SimuladorCommand {
     private MotorSimulacao motor;
     private long tempoInicial;
 
-    public SimuladorCommand(FeixeLuz feixeLuz, SistemaOptico system, String baseNumeric) {
+    public SimuladorCommand(FeixeLuz feixeLuz, SistemaOptico sistema, String baseNumerica) {
         this.feixeLuz = feixeLuz;
         this.sistema = sistema;
         this.baseNumerica = baseNumerica;
