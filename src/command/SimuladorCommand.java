@@ -30,6 +30,7 @@ public class SimuladorCommand {
 
         // Calcula velocidade de propagação (m/s)
         double speedOfLight = motor.calculateSpeedOfLightInMedium(1.33); // água
+
         // Velocidade de transmissão (bits/s)
         double transmissionSpeed = motor.calculateBitsPerSecond(feixeLuz, Integer.parseInt(baseNumerica), 1.0, duration);
 
