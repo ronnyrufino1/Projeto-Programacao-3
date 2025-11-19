@@ -103,9 +103,9 @@ public class Menu {
 
     private static void adicionarEstruturaOptica() {
         System.out.println("\n=== ADICIONAR ESTRUTURA ÓPTICA ===");
-        System.out.println("1. Espelho (Reflexão Fresnel) — reflete o feixe com perda de intensidade");
-        System.out.println("2. Prisma (Refração Snell) — muda o ângulo e a intensidade");
-        System.out.println("3. Filtro (Absorção Beer-Lambert) — reduz intensidade (ex: absorção em vidro)");
+        System.out.println("1. Espelho (Reflexão) — reflete o feixe com perda de intensidade");
+        System.out.println("2. Prisma (Refração) — muda o ângulo e a intensidade");
+        System.out.println("3. Filtro (Absorção) — reduz intensidade (ex: absorção em vidro)");
 
         try {
             int choice = scanner.nextInt();
