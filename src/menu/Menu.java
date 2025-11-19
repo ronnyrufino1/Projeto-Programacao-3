@@ -63,32 +63,33 @@ public class Menu {
         System.out.println("\n=== CRIAR FEIXE DE LUZ ===");
         System.out.print("Intensidade (W/m² ou relativo, ex: 1,0): ");
         double intensidade = getDouble();
+        scanner.nextLine();
 
         System.out.print("Comprimento de onda (nm, ex: 500.0 para verde): ");
         double comprimentoDeOnda = getDouble();
-
+        scanner.nextLine();
 
         System.out.println("\n Escolha a polarização (afeta reflexão e refração):");
-        System.out.println("   - 'horizontal' (H) → vibração horizontal");
-        System.out.println("   - 'vertical' (V) → vibração vertical");
-        System.out.println("   - 'circular' (C) → rotação em espiral (útil em modulação)");
+        System.out.println("   - 'horizontal' (H)");
+        System.out.println("   - 'vertical' (V)");
+        System.out.println("   - 'circular' (C)");
         System.out.print("Polarização: ");
 
-        String entrada = scanner.nextLine().trim().toLowerCase();
+        String polaridade = scanner.nextLine().trim().toLowerCase();
 
-        // Mapeia abreviações
-        String polaridade = entrada;
+        // Mapeia abreviações para strings completas
         if (polaridade.equals("h")) polaridade = "horizontal";
         if (polaridade.equals("v")) polaridade = "vertical";
         if (polaridade.equals("c")) polaridade = "circular";
 
-        // Valida se a polaridade final é uma das aceitas
+        // Valida e define padrão se necessário
         if (!polaridade.equals("horizontal") &&
                 !polaridade.equals("vertical") &&
                 !polaridade.equals("circular")) {
             System.out.println("Polarização inválida. Usando 'horizontal' por padrão.");
             polaridade = "horizontal";
         }
+
 
         System.out.print("Ângulo de incidência (graus, ex: 30.0): ");
         double angulo = getDouble();
