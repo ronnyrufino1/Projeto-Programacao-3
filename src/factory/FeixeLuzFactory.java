@@ -3,7 +3,7 @@ package factory;
 import core.FeixeLuz;
 
 public class FeixeLuzFactory {
-    public static FeixeLuz createBeam(String type, double intensidade, double comprimentoDeOnda, String polaridade, double angulo) {
+    public static FeixeLuz criarFeixe(String type, double intensidade, double comprimentoDeOnda, String polaridade, double angulo) {
         switch (type.toLowerCase()) {
             case "laser":
                 return new FeixeLuz(intensidade, comprimentoDeOnda, polaridade, angulo);
