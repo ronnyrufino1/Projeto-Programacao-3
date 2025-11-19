@@ -6,11 +6,11 @@ import core.SistemaOptico;
 import observer.LogObserver;
 
 public class SimuladorCommand {
-    private FeixeLuz feixeLuz;
-    private SistemaOptico sistema;
-    private String baseNumerica;
-    private MotorSimulacao motor;
-    private long tempoInicial;
+    private final FeixeLuz feixeLuz;
+    private final SistemaOptico sistema;
+    private final String baseNumerica;
+    private final MotorSimulacao motor;
+    private final long tempoInicial;
 
     public SimuladorCommand(FeixeLuz feixeLuz, SistemaOptico sistema, String baseNumerica) {
         this.feixeLuz = feixeLuz;
