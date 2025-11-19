@@ -93,9 +93,8 @@ public class Menu {
         System.out.print("Ângulo de incidência (graus, ex: 30.0): ");
         double angulo = getDouble();
 
-        FeixeLuz feixeLuz = FeixeLuzFactory.createBeam("laser", intensidade, comprimentoDeOnda, polaridade, angulo);
+        FeixeLuz feixeLuz = FeixeLuzFactory.criarFeixe("laser", intensidade, comprimentoDeOnda, polaridade, angulo);
         System.out.println("Feixe criado: " + feixeLuz);
-        System.out.println("💡 Dica: A polarização afeta como o feixe é refletido ou refratado.");
 
         // Armazenar feixe em variável global
         Menu.feixeAtual = feixeLuz;
