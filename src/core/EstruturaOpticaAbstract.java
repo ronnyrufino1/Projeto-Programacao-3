@@ -13,5 +13,5 @@ public abstract class EstruturaOpticaAbstract {
     public abstract void processo(FeixeLuz feixeLuz);
     public abstract String getTipo();
 
-    public abstract String getNome();
+    public abstract String getName();
 }
