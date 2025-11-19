@@ -185,6 +185,17 @@ public class Menu {
     }
 
     private static void mostrarLogs() {
+
+        if (Menu.feixeAtual == null) {
+            System.out.println("Erro: Nenhum feixe criado. Crie um primeiro.");
+            return;
+        }
+
+        if (Menu.sistemaAtual == null) {
+            System.out.println("Erro: Nenhum sistema óptico adicionado. Adicione uma estrutura primeiro.");
+            return;
+        }
+
         System.out.println("\n=== LOGS DE SIMULAÇÃO ===");
         LogObserver.getInstance().printLogs();
     }
