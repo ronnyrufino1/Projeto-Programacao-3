@@ -29,11 +29,6 @@ public class Reflexao extends EstruturaOpticaAbstract implements OpticoStrategy 
     }
 
     @Override
-    public String getName() {
-        return "";
-    }
-
-    @Override
     public void processo(FeixeLuz feixeLuz) {
 
     }
@@ -44,7 +39,7 @@ public class Reflexao extends EstruturaOpticaAbstract implements OpticoStrategy 
     }
 
     @Override
-    public String getNome() {
+    public String getName() {
         return "Reflexão";
     }
 }
