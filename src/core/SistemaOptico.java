@@ -27,7 +27,7 @@ public class SistemaOptico {
     }
 
     //@Override
-    public String getNome() {
+    public String getName() {
         return "Sistema Completo";
     }
 
