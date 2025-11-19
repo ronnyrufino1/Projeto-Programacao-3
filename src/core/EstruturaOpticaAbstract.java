@@ -3,9 +3,6 @@ package core;
 public abstract class EstruturaOpticaAbstract {
     protected String nome;
 
-    public EstruturaOpticaAbstract(String name) {
-        this.nome = nome;
-    }
 
     protected EstruturaOpticaAbstract() {
     }
