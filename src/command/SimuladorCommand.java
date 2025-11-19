@@ -24,9 +24,9 @@ public class SimuladorCommand {
         // Executa a simulação
         sistema.processo(feixeLuz);
 
-        // Calcula tempo
-        long endTime = System.nanoTime();
-        double duration = (endTime - tempoInicial) * 1e-9;
+        // Calcula o tempo
+        long tempoFinal = System.nanoTime();
+        double duration = (tempoFinal - tempoInicial) * 1e-9;
 
         // Calcula velocidade de propagação (m/s)
         double speedOfLight = motor.calculateSpeedOfLightInMedium(1.33); // água
